@@ -79,7 +79,7 @@ start_button.addEventListener('click', function() {
 container_main.style.display = 'none'
 container_start.style.display = 'flex'
 container_start_h3.innerHTML = `<h3>Ви дали ${correct_answers_given} правильних відповідей із ${total_answers_given}.</h3>`
-    }, 10000)
+    }, 30000)
 })
 
 
@@ -90,7 +90,7 @@ for (let i = 0; i < answer_buttons.length; i += 1) {
             answer_buttons[i].style.background = '#00FF00'
             anime({
                 targets: answer_buttons[i],
-                background: '#FFFFFF',
+                background: '#4e4f48',
                 duration: 500,
                 delay: 100,
                 easing: 'linear'
@@ -99,7 +99,7 @@ for (let i = 0; i < answer_buttons.length; i += 1) {
             answer_buttons[i].style.background = '#FF0000'
             anime({
                 targets: answer_buttons[i],
-                background: '#FFFFFF',
+                background: '#4e4f48',
                 duration: 500,
                 delay: 100,
                 easing: 'linear'
